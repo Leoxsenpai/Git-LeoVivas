@@ -15,6 +15,22 @@
       padding-left: 30px;
   }
   
+  /*FONDOS*/
+  .imagenesfondo{
+      background-image: url("https://static.tumblr.com/bdc6961f4c7545d37ee9584cdf0a1c11/diajvlk/I2ooj8fwt/tumblr_static_tumblr_static_6qyt3i4z3i8040s4sckgws4ok_focused_v3.png");
+  }
+  .wikifondo{
+    background-image: url("https://i.pinimg.com/originals/1d/15/d8/1d15d8da8b3b6f3a895828ba2663f409.gif");
+  }
+  .unirsefondo{
+    background-image: url("https://i.pinimg.com/originals/c4/92/ba/c492baf54af3024902ae3cc570f2aaf3.jpg");
+  }
+  .videosfondo{
+      background-image: url("https://media.istockphoto.com/vectors/vaporwave-abstract-checkered-background-vector-id1204024766?k=6&m=1204024766&s=170667a&w=0&h=4PyvlWqDijTM5GKEfe8wEsLGIOF5Nie4wQea6oQIoOU=");
+  }
+  .musicafondo{
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlyHMULF3NGWb8i7heGM2BCps8WaTYRHwwBA&usqp=CAU");
+  }
 
   /* MENU*/
   
@@ -126,22 +142,27 @@
       background-color: #00DF93;
   
       padding: 10px;
-      margin: 0px 1% 1% 1%;
+      margin: 1% 1% 1% 1%;
       border-radius: 5px;
   }
   
+  .container{
+      justify-content: center;
+  }
+
   .row {
       background-color: #00DF93;
-  
+      border-radius: 5px;
       display: flex;
-      padding: 5px;
-      margin-bottom: 40px;
+      padding: 25px;
+      margin: 20px;
       flex-wrap: wrap;
+      
   }
   
   .columna{
       flex: 25%;
-      padding: 5px;
+      padding: 10px;
   }
   
   /*WIKI*/
@@ -154,17 +175,15 @@
       color: white;
   }
   
-  .wiki{
-      background-image: url("https://i.pinimg.com/originals/1d/15/d8/1d15d8da8b3b6f3a895828ba2663f409.gif");
-  }
+ 
   
   p {
       background-color: #d6eaf8;
       border-radius: 8px;
-      padding: 20px 20px 20px 20px;
-      margin: 0px 10% 20px 10%;
+      padding: 15px;
+      margin: 8%;
   
-      font-size: 140%;
+      font-size: larger;
   }
 
   .btn-wiki--blanco{
@@ -176,7 +195,7 @@
   fieldset, form{
       background-color: #00DF93;
       padding: 20px 20px 20px 20px;
-      margin: 0px 40% 0px 40%;
+      margin: 0px 20% 0px 20%;
       border-radius: 5px;
   }
   
@@ -195,7 +214,7 @@
   footer{
       height: 50px;
       width: 100%;
-      margin-top: 5%;
+      margin-top: 10px;
       background-image: linear-gradient(315deg, #20bf55 0%, #01baef 74%);
   
       display: flex;
@@ -217,6 +236,9 @@
     body {
       font-size: 14pt;
     }
+    p{
+        margin: 5%;
+    }
     footer{
         background-image: linear-gradient(315deg, #0499f2 0%, #26f596 74%);
     }
@@ -224,7 +246,17 @@
   
   @media (max-width: 480px) {
     body {
-      font-size: 100%;
+      font-size: 10pt;
+    }
+    .fila{
+        flex-flow: column;
+    }
+    p{
+        font-size: medium;
+        margin: 2%;
+    }
+    fieldset,form{
+        margin: 0px 10% 0px 10%;
     }
     footer{
         background-image: linear-gradient(315deg, #70b2d9 0%, #39e5b6 74%);
